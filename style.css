@@ -1,0 +1,26 @@
+/* Base styles */
+body {
+    margin: 0;
+    /* border box */
+}
+a {
+
+}
+a:hover {
+
+}
+ul, li {
+    margin: 0;
+}
+nav {
+    margin: 0;
+}
+/* Layout styles */
+.nav__container {
+    display: flex;
+}
+
+/* Block styles */
+.nav_listitems {
+    display: flex;
+}
