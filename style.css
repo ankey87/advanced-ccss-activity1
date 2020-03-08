@@ -1,26 +1,131 @@
-/* Base styles */
 body {
-    margin: 0;
-    /* border box */
+  font-family: 'Nunito', sans-serif;
+  color: black;
 }
-a {
 
+h1, h2 {
+  text-align: center;
 }
-a:hover {
 
+h1 {
+  font-size: 200%;
 }
-ul, li {
-    margin: 0;
+
+h2 {
+  font-size: 110%;
+  font-weight: 100;
 }
+
+p {
+  text-align: center;
+}
+
 nav {
-    margin: 0;
-}
-/* Layout styles */
-.nav__container {
-    display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
-/* Block styles */
-.nav_listitems {
-    display: flex;
+nav li {
+  display: inline-block;
+  margin: 0 1em 1em 0;
 }
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.signup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.signup__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.signup__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  left: 65px;
+  margin-top: 10px;
+}
+
+.hero__video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero__header {
+  line-height: 0;
+}
+
+.nav__btn-sch {
+  border-radius: 6px;
+  background-color: blue;
+  padding: 0.5em;
+  width: 9em;
+  text-align: center;
+  display: inline-block;
+  color: white;
+  cursor: pointer;
+}
+
+.submit__btn {
+  background-color: blue;
+  text-decoration: none;
+  color: white;
+  padding: 0.5em;
+  border-radius: 6px;
+  width: 8em;
+  text-align: center;
+  display: inline-block;
+}
+
+.signup form input[type=submit] {
+  border: none;
+  background-color: blue;
+  text-decoration: none;
+  color: white;
+  padding: 0.5em;
+  border-radius: 6px;
+  width: 8em;
+  text-align: center;
+  font-size: .8rem;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
