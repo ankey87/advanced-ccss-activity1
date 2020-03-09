@@ -90,9 +90,28 @@ body {
     cursor: pointer;
 }
 .info {
+  display: flex;
+  flex-direction: column;
+}
+.info__kenzie {
+  display: flex;
+  flex-direction: column;
+}
+.info__card {
   display: grid;
-  grid-column: 1 / 5;
-  grid-row: 1 / 5;
+  grid-template-columns: 100px 100px 100px 100px;
+  grid-template-rows: auto;
+  grid-template-areas:
+   ". icon icon ."
+   ". icon icon icon"
+   ". header . .";
+  width: 2em;
+}
+.team__header {
+  grid-area: header;
+}
+.fas {
+  grid-area: icon;
 }
 .hero {
   display: flex;
