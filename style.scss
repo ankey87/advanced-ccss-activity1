@@ -4,116 +4,181 @@ $btntxtColor: white;
 $textDecoration: none;
 
 body {
-    font-family: 'Nunito', sans-serif;
-    color: $textColor;
-  }
-  h1, h2 {
-    text-align: center;
-  }
-  h1 {
-    font-size: 200%;
-  }
-  h2 {
-    font-size: 110%;
-    font-weight: 100;
-  }
-  p {
-    text-align: center;
-  }
-  nav {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+  font-family: 'Nunito', sans-serif;
+  color: $textColor;
+}
+h1, h2 {
+  text-align: center;
+}
+h1 {
+  font-size: 200%;
+}
+h2 {
+  font-size: 110%;
+  font-weight: 100;
+}
+p {
+  text-align: center;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-end;
+  padding-left: 20px;
     li {
-      display: inline-block;
-      margin: 0 1em 1em 0;
-      }
-     a {
-         text-decoration: $textDecoration;
-         color: $textColor;
-     }
-  }
-  .signup {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .signup__contact {
-    display: flex;
-    flex-direction: column;
-  }
-  .signup__btn {
-    display: flex;
-    position: relative;
-    left: 65px;
-    margin-top: 10px;
-  }
-  .hero__video {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .hero__header {
-    line-height: 0;
-  }
-  .nav__btn-sch {
-    border-radius: 6px;
-    background-color:$primaryBtn;
-    padding: 0.5em;
-    width: 9em;
-    text-align: center;
-    display: inline-block;
-    color: $btntxtColor;
-    cursor: pointer;
-  }
-  .submit__btn {
-    background-color: $primaryBtn;
-    text-decoration: none;
-    color: white;
-    padding: 0.5em;
-    border-radius: 6px;
-    width: 8em;
-    text-align: center;
-    display: inline-block;
-  } 
-  .signup form input[type=submit] {
-    border: none;
-    background-color: $primaryBtn;
-    text-decoration: none;
-    color: $btntxtColor;
-    padding: 0.5em;
-    border-radius: 6px;
-    width: 8em;
-    text-align: center;
-    font-size: .8rem;
-    cursor: pointer;
+    margin: 0 .30em .30em .5em;
+    font-size: 12px;
+    }
+    a {
+      display: flex;
+      text-decoration: $textDecoration;
+      color: $textColor;
+    }
+    ul {
+      display: flex;
+      padding: 0px;
+    }
 }
-.info {
+.nav__btn {
+  display: flex;
+  position: relative;
+  bottom: 5px;
+}
+.signup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.signup__contact {
   display: flex;
   flex-direction: column;
 }
-.info__kenzie {
+.signup__btn {
   display: flex;
-  flex-direction: column;
-}
-.info__card {
-  display: grid;
-  grid-template-columns: 100px 100px 100px 100px;
-  grid-template-rows: auto;
-  grid-template-areas:
-   ". icon icon ."
-   ". icon icon icon"
-   ". header . .";
-  width: 2em;
-}
-.team__header {
-  grid-area: header;
-}
-.fas {
-  grid-area: icon;
+  position: relative;
+  left: 65px;
+  margin-top: 10px;
 }
 .hero {
   display: flex;
   flex-direction: column;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.hero__video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header_ctn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.hero__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  line-height: 0;
+  margin-bottom: 15px;
+}
+.nav__btn-sch {
+  border-radius: 6px;
+  background-color:$primaryBtn;
+  padding: 0.5em;
+  width: 9em;
+  text-align: center;
+  display: inline-block;
+  color: $btntxtColor;
+  cursor: pointer;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.submit__btn {
+  background-color: $primaryBtn;
+  text-decoration: none;
+  color: white;
+  padding: 0.5em;
+  border-radius: 6px;
+  width: 8em;
+  text-align: center;
+  display: inline-block;
+} 
+.signup form input[type=submit] {
+  border: none;
+  background-color: $primaryBtn;
+  text-decoration: none;
+  color: $btntxtColor;
+  padding: 0.5em;
+  border-radius: 5px;
+  width: 8em;
+  text-align: center;
+  font-size: .8rem;
+  cursor: pointer;
+  margin-bottom: 1em;
+  margin-left: 1.7em;
+}
+.signup h3 {
+  margin: .5rem;
+}
+.signup p {
+  margin-bottom: 2rem;
+}
+.signup__name input,
+.signup__contact input {
+  border-style: solid;
+  padding: 10px;
+  margin: .5em;
+}
+.info__students {
+  margin-bottom: .5rem;
+}
+.std__para {
+  margin-bottom: .5rem;
+}
+.info__more{
+display: flex;
+justify-content: center;
+}
+.info__kenzie {
+display: flex;
+flex-direction: column;
+}
+.info__footer {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.info__people {
+display: grid;
+margin-top: 20px;
+grid-template-columns: 100%;
+}
+.card__top {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+.card__bottom {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+.fas {
+font-size: 2rem;
+width: 1em;
+margin: 0.3em;
+}
+.card__foot {
+display: flex;
+justify-content: center;
 }
